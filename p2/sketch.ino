@@ -24,8 +24,14 @@ void loop() {
 
   if(btnstateb == HIGH){
     digitalWrite(ledb, HIGH);
+    digitalWrite(ledm, LOW);
+    delay(500);
+    digitalWrite(ledb, LOW);
+    digitalWrite(ledm, HIGH);
+    delay(500);
   } else {
     digitalWrite(ledb, LOW);
+    digitalWrite(ledm, LOW);
   }
 
   if(btnstatem == HIGH){
